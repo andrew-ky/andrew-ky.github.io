@@ -211,8 +211,6 @@ section{
 }
 
 .about img {
-    width: clamp(200px, 28%, 250px); /* Increased image size */
-    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
