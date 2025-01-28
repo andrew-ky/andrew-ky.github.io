@@ -211,8 +211,8 @@ section{
 }
 
 .about img {
-    width: 1500px;
-    height: 2100px;
+    width: 50%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
