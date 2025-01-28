@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 75vh; /* Adjust header height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Align items at the bottom */
+    justify-content: flex-start;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the header completely */
+    display: block;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0; /* Gradient aligns with the bottom of the header */
+    left: 0;
+    width: 100%;
+    height: 30%; /* Adjust the gradient coverage */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+    filter: blur();
+    pointer-events: none;
+}
+.header button {
+    position: absolute;
+    top: 1rem; /* Space from the top */
+    left: 1.5rem; /* Space from the left */
+    background: none; /* Remove any default background styling */
+    border: none; /* Remove any default border */
+    font-size: 1.5rem; /* Adjust the size of the icon */
+    color: white; /* Make the icon color stand out */
+    cursor: pointer; /* Change cursor to pointer */
+    z-index: 10; /* Ensure it appears above other elements */
+    transition: transform 0.2s ease-in-out; /* Add a subtle hover effect */
+}
+
+.header button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+/* Logo Styling */
+.logo {
+    position: absolute;
+    bottom: 1.25rem; /* Reduced spacing between logo and bottom of the header */
+    left: 9.375rem; /* Added space to the left */
+    max-width: 21.875rem; /* Increased logo size */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+/* New Details Section */
+.details {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 12%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Align play-box left and info-box right */
+    align-items: flex-start; /* Align items at the top of the container */
+    gap: 2rem; /* Optional spacing between the two containers */
+}
+.play-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 0.5rem;
+    position: relative; /* Allow positioning relative to its parent */
+}
+.time-year{
+    display: flex;
+    align-items: center; /* Align label and value horizontally */
+    gap: 0.5rem; /* Add spacing between label and value */
+}
+.info-box {
+    display: flex;
+    flex-direction: column; /* Stack the label-value pairs vertically */
+    gap: 0.5rem; /* Space between each label-value pair */
+    align-items: flex-start; /* Align the content to the left */
+}
+
+.info {
+    display: flex;
+    align-items: center; /* Align label and value horizontally */
+    gap: 0.5rem; /* Add spacing between label and value */
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Play Button Styling */
+.btn-play {
+    border-radius: .63rem; /* Slightly curved corners for a more rectangular look */
+    padding: 0.5rem 4rem; /* Wider button with larger padding */
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.062); /* Transparent white background */
+    color: white; /* Text color is white */
+    display: flex;
+    align-items: center;
+    gap: .63rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-play:hover {
+    transform: scale(1.05);
+}
+
+/* Play Icon */
+.btn-play i {
+    font-size: 20px;
+    color: black; /* Icon color is white to stand out on black background */
+}
+
+/* Play Text */
+.btn-play .btn {
+    font-size: 16px;
+    color: black; /* Play text is white */
+}
+
+.play-link {
+  display: flex; /* Makes the <a> tag behave like a flex container */
+  align-items: center; /* Centers icon and text vertically */
+  text-decoration: none; /* Removes underline */
+  gap: 8px; /* Adds spacing between icon and text */
+}
