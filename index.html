@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class= "header">
+        <a href="#" class ="logo"><span>Andrew Ky</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Andrew Ky</h1>
+                    <span>Student at the University of Michigan</span>
+                </div>
+                <div class="btn-group">
+                    <div class="btn"><a href="AndrewKyResume2025.pdf" download>Download CV</a></div>
+                    <div class="btn"><a href="mailto:andrewtky14@gmail.com">Contact</a></div>
+                </div>
+                <div class="socials"><a href="https://www.linkedin.com/in/andrew-ky/">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <img src="headshot.png" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <img src="headshot2.jpg" alt="">
+            <div class="about-col1">
+                <div class="text">
+                    <p class="about-text">
+                        I am a current senior pursuing a Bachelors of Science in Economics and a minor in Data Science. I am currently seeking a full time role post graduation and am excited to leverage my strong technical and analytical skills.
+                        <br>
+                        <br>
+                        With a strong foundation in data analysis, project managment, and marketing, I am passionate about developing innovative solutions and contributing to impactful projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume" class="resume">
+        <div class="tabs">
+            <div class="btn-box">
+                <button id="education-btn" class="active-link" onclick="openTab('education')">Education</button>
+                <button id="awards-btn" onclick="openTab('awards')">Awards</button>
+                <button id="skills-btn" onclick="openTab('skills')">Skills</button>
+            </div>
+        </div>
+        <div id="education" class="tab-info active-tab">
+            <ul>
+                <li><span>University of Michigan - Ann Arbor, MI</span><br> B.S. Economics, Data Science Minor &nbsp; | &nbsp; August 2022 - May 2025</li>
+                <li><span>Michigan State University - East Lansing, MI </span><br> Eli Broad College of Business &nbsp; | &nbsp; August 2021 - May 2022</li>
+                <li><span>West Ottawa High School - Holland, MI</span><br>Diploma &nbsp; | &nbsp; September 2017 - June 2021</li>
+            </ul>
+        </div>
+        <div id="awards" class="tab-info">
+            <ul>
+                <li><span> MSU Dean's List<span style="font-weight: lighter;"> | Fall 2021/Spring 2022 </span></span><br> Honors full-time undergraduates in the University who earn a 3.50 or better grade-point average for the courses totaling 12 or more credits for a given semester.</li>
+                <li><span> AP Scholar <span style="font-weight: lighter;"> | 2021 </span> </span><br>Granted to students who receive scores of 3 or higher on three or more AP Exams.</li>
+                <li><span> Daughters of the American Revolution's Good Citizens Award <span style="font-weight: lighter;"> | 2021 </span></span><br>Recognizes and rewards high school seniors who possess the qualities of dependability, service, leadership, and patriotism in their homes, schools, and communities. Nominated by teachers.</li>
+                <li><span> Michigan Governor Youth Service Award <span style="font-weight: lighter;"> | 2021 </span> </span><br>Youth Changemaker Award: For completing at least 400 hours of service in outstanding commitment to volunteerism and exemplary performance in enhancing community life.</li>
+            </ul>
+        </div>
+        <div id="skills" class="tab-info">
+            <ul>
+                <li><span>Programming and Data Analysis</span><br> Python, C++, HTML, CSS, JavaScript, R </li>
+                <li><span>Softwares</span><br> Microsoft Suite (Word, Excel, PowerPoint, Outlook), Adobe Suite (Premire Pro, After Effects, Photoshop, Lightroom), Canva </li>
+                <li><span>Project Managment</span><br> Communication, Problem Solving, Budgeting, Scheduling</li>
+            </ul>
+        </div>
+    </section>
+
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <h3 class="project-title">Video Projects</h3>
+        <div class="video-projects">
+            <div class="grid">
+                <div class="grid-card"><img src="seniorsurvivor.png" alt="Senior Survivor"></div>
+                
+                <div class="grid-card"><img src="fishybusiness.png" alt="Fishy Business"></div>
+                
+                <div class="grid-card"><a href="victorthon.html"><img src="victorthon2024.png" alt="Victor Thon 2024"></a></div>
+               
+                <div class="grid-card"><img src="thejobinterview.png" alt="The Job Interview"></div>
+              
+                <div class="grid-card"><a href="covid.html"><img src="covid19.png" alt="Covid-19 Project"></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id= "contact">
+        <h2 class="section-title">Contact Me </h2>
+        <div class="input-box">
+            <div class="input">
+                <i class = "fa-solid fa-envelope"></i>
+                <p><a href="mailto:andrewtky14@gmail.com"> andrewtky14@gmail.com</a></p>
+            </div>
+            <div class="input">
+                <i class = "fa-brands fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/andrew-ky/"> LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
