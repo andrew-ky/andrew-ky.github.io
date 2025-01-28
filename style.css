@@ -11,6 +11,7 @@
 body {
     transition: background-color 1s ease, color 1s ease;
 }
+
 header {
     position: fixed;
     top: 100%;
@@ -134,8 +135,9 @@ section{
     gap: 1rem;
 }
 .btn{
-    border-radius: 3rem;
+    display: inline-block;
     padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
     border: 2px solid black;
     cursor: pointer;
     font-weight: 500;
