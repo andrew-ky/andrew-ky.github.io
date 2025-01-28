@@ -147,7 +147,9 @@ section{
 
 }
 .btn a{
-    display: block;
+    display: inline-block; /* Ensure the <a> tag fills the space */
+    width: 100%; /* Full width */
+    height: 100%;
     color: black;
     transition: color 1s ease;
 }
