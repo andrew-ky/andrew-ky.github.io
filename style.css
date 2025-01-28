@@ -135,6 +135,7 @@ section{
     gap: 1rem;
 }
 .btn{
+    display: inline-block;
     border-radius: 3rem;
     border: 2px solid black;
     cursor: pointer;
