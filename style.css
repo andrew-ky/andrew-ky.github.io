@@ -211,7 +211,7 @@ section{
 }
 
 .about img {
-    width: 50%;
+    width: clamp(200px, 28%, 250px);
     height: auto;
     border-radius: 10px;
     object-fit: cover;
